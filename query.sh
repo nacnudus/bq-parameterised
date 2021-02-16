@@ -51,6 +51,10 @@
 for i in "$@"
 do
 case $i in
+    --query_file=*)
+    query_file="${i#*=}"
+    shift # past argument=value
+    ;;
     --input_table=*)
     input_table="${i#*=}"
     shift # past argument=value
