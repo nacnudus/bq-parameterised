@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# A script to run parameterised queries in Google BigQuery.  The queries are
+# defined in local files, that may contain placeholders such as @replace_me.
+# Provide values for the placeholders as arguments to this script, e.g.
+
+# bash query.sh --query_file=query.sql --input_table=shakespeare --corpus="romeoandjuliet" --min_word_count=250
+
+
 # Troubleshooting
 #
 # If the following command doesn't create the expected output, then the problem
