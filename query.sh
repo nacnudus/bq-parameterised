@@ -71,7 +71,7 @@ done
 
 # Read the query into a variable
 # https://stackoverflow.com/a/10771857/937932
-sql=`cat query.sql`
+sql="$(<${query_file})"
 
 # Substitute command-line arguments for
 
