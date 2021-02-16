@@ -1,7 +1,7 @@
 # BigQuery parameterised queries at the command line
 
-Execute a parameterised query in BigQuery with a bash script that accepts
-arguments at the command line.
+Run an SQL script in BigQuery, providing parameters at the command line,
+including paramaterised table names, which aren't supported by the BigQuery API.
 
 ```sh
 bash query.sh --input_table=shakespeare --corpus="romeoandjuliet" --min_word_count=250
